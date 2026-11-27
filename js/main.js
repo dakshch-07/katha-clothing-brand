@@ -293,28 +293,38 @@ function setupHeaderBehavior() {
 function setupMobileMenu() {
   const toggleBtn = document.getElementById("mobileToggle");
   const menuOverlay = document.getElementById("mobileMenuOverlay");
+  const closeBtn = document.getElementById("mobileMenuClose");
   const mobileLinks = document.querySelectorAll(".mobile-nav-link, .mobile-menu-cta .btn");
 
   if (!toggleBtn || !menuOverlay) return;
 
+  function openMenu() {
+    toggleBtn.classList.add("active");
+    menuOverlay.classList.add("active");
+    document.body.classList.add("no-scroll");
+  }
+
+  function closeMenu() {
+    toggleBtn.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    document.body.classList.remove("no-scroll");
+  }
+
   function toggleMenu() {
-    const isOpen = toggleBtn.classList.toggle("active");
-    menuOverlay.classList.toggle("active");
-    if (isOpen) {
-      document.body.classList.add("no-scroll");
+    if (menuOverlay.classList.contains("active")) {
+      closeMenu();
     } else {
-      document.body.classList.remove("no-scroll");
+      openMenu();
     }
   }
 
   toggleBtn.addEventListener("click", toggleMenu);
+  if (closeBtn) {
+    closeBtn.addEventListener("click", closeMenu);
+  }
 
   mobileLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      toggleBtn.classList.remove("active");
-      menuOverlay.classList.remove("active");
-      document.body.classList.remove("no-scroll");
-    });
+    link.addEventListener("click", closeMenu);
   });
 }
 
