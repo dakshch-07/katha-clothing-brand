@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>कथा (Katha) – every little has a story | Kids Fashion</title>
+  <meta name="description" content="Katha – A calm, story-led kids clothing brand for 0 to 12 years. Soft on skin, easy to wear, made for play, gift-ready.">
+  <meta name="theme-color" content="#020638">
+
+  <!-- Favicon / Icon -->
+  <link rel="icon" type="image/png" href="assets/elephant.png">
+
+  <!-- Google Fonts: Tiro Devanagari Hindi, Cormorant Garamond, Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;500;600;700;800&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-scroll">
+
+  <!-- ========================================================
+       0. PRELOADER (1.5s brand experience)
+       ======================================================== -->
+  <div id="preloader" class="preloader" aria-label="Loading Katha Kids Fashion">
+    <div class="loader-content">
+      <div class="loader-wordmark-wrap">
+        <span class="loader-wordmark">कथा</span>
+        <img src="assets/elephant.png" alt="Baby Elephant Mascot" class="loader-elephant">
+      </div>
+      <div class="loader-tagline">every little has a story</div>
+      <div class="loader-kids-line">
+        <span class="loader-divider"></span>
+        <span>Kids Fashion ♡</span>
+        <span class="loader-divider"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       1. HEADER (Sticky, transparent -> navy blur on scroll)
+       ======================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Logo left -->
+      <a href="#hero" class="brand-logo" aria-label="Katha Kids Home">
+        <img src="assets/logo-transparent.png" alt="कथा - every little has a story | Kids Fashion" class="brand-logo-img">
+      </a>
+
+      <!-- Center navigation menu (Desktop) -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#age-groups" class="nav-link">Age Groups</a>
+        <a href="#our-story" class="nav-link">Our Story</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="header-actions">
+        <a href="#" data-wa-action="general" class="btn btn-gold header-whatsapp-btn">
+          <span>Shop on WhatsApp</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.818 2.796.818 3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm0 10.455c-.911 0-1.637-.251-2.434-.725l-.174-.103-1.802.473.481-1.758-.114-.181c-.538-.854-.823-1.579-.823-2.396 0-2.614 2.127-4.741 4.742-4.741 2.615 0 4.742 2.127 4.742 4.742s-2.127 4.743-4.742 4.743z"/>
+          </svg>
+        </a>
+
+        <!-- Mobile hamburger toggle button -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Fullscreen Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#collections" class="mobile-nav-link">Collections</a>
+      <a href="#age-groups" class="mobile-nav-link">Age Groups</a>
+      <a href="#categories" class="mobile-nav-link">Categories</a>
+      <a href="#our-story" class="mobile-nav-link">Our Story</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
+    <div class="mobile-menu-cta">
+      <a href="#" data-wa-action="general" class="btn btn-gold" style="width: 100%;">
+        <span>Shop on WhatsApp</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.818 2.796.818 3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm0 10.455c-.911 0-1.637-.251-2.434-.725l-.174-.103-1.802.473.481-1.758-.114-.181c-.538-.854-.823-1.579-.823-2.396 0-2.614 2.127-4.741 4.742-4.741 2.615 0 4.742 2.127 4.742 4.742s-2.127 4.743-4.742 4.743z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ========================================================
+         2. HERO SECTION (100vh)
+         ======================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-cosmic-bg"></div>
+      <div class="hero-glow-orb hero-glow-1"></div>
+      <div class="hero-glow-orb hero-glow-2"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text left 50% -->
+          <div class="hero-text-col">
+            <div class="hero-tag">
+              <span>Kids Fashion ♡</span>
+            </div>
+            <h1 class="hero-headline">every little has a story.</h1>
+            <p class="hero-subline">
+              Soft, stylish & comfy clothing for 0–12 years. Thoughtfully handcrafted Indian silhouettes tailored for little storytellers, playful days, and cherished family celebrations.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#collections" class="btn btn-gold">
+                <span>Explore Collection</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#our-story" class="btn btn-outline-cream">
+                <span>Our Story</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right 50% = 3 overlapping floating photo cards + peeking elephant -->
+          <div class="hero-visual">
+            <div class="hero-card hero-card-1">
+              <img src="assets/images/hero-1.jpg" alt="Child dressed in cheerful yellow summer outfit">
+            </div>
+            <div class="hero-card hero-card-2">
+              <img src="assets/images/hero-2.jpg" alt="Young boy in comfortable festive styling">
+            </div>
+            <div class="hero-card hero-card-3">
+              <img src="assets/images/hero-3.jpg" alt="Happy girl playing in pastel floral dress">
+            </div>
+            <!-- Baby elephant peeking mascot -->
+            <img src="assets/elephant.png" alt="Baby Elephant Mascot" class="hero-elephant-mascot">
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated scroll cue -->
+      <a href="#promise" class="hero-scroll-cue" aria-label="Scroll down">
+        <span class="hero-scroll-heart">♡</span>
+        <div class="hero-scroll-line"></div>
+      </a>
+    </section>
+
+    <!-- ========================================================
+         3. BRAND PROMISE STRIP (4 icons, calm)
+         ======================================================== -->
+    <section class="promise-strip" id="promise">
+      <div class="container">
+        <div class="promise-grid">
+          <!-- Item 1 -->
+          <div class="promise-item">
+            <div class="promise-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 0 0-7.07 17.07l.07.07c3.9 3.9 10.1 3.9 14 0l.07-.07A10 10 0 0 0 12 2z"></path>
+                <path d="M8 12s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <div>
+              <h3 class="promise-title">Soft on skin</h3>
+              <p class="promise-desc">Pure cottons & breathable mulmul</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="promise-item">
+            <div class="promise-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="promise-title">Easy to wear</h3>
+              <p class="promise-desc">No scratchy tags, elasticated fits</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="promise-item">
+            <div class="promise-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </div>
+            <div>
+              <h3 class="promise-title">Made for play</h3>
+              <p class="promise-desc">Durably stitched for everyday joy</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="promise-item">
+            <div class="promise-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 12 20 22 4 22 4 12"></polyline>
+                <rect x="2" y="7" width="20" height="5"></rect>
+                <line x1="12" y1="22" x2="12" y2="7"></line>
+                <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path>
+                <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="promise-title">Gift-ready</h3>
+              <p class="promise-desc">Beautiful keepsake gift boxes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         4. SHOP BY AGE (Main Navigation)
+         ======================================================== -->
+    <section class="section shop-age-section" id="age-groups">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">easy navigation</div>
+          <h2 class="section-title">Find the perfect fit.</h2>
+          <p class="section-subtitle">Specially curated sizing tailored for the unique growth stages of your little ones.</p>
+        </div>
+
+        <div class="age-cards-grid">
+          <!-- Newborn -->
+          <div class="age-card theme-newborn">
+            <div class="age-card-img-wrap">
+              <span class="age-badge">0–12 Months</span>
+              <img src="assets/images/age-newborn.jpg" alt="Newborn baby clothing" class="age-card-img" loading="lazy">
+            </div>
+            <div class="age-card-info">
+              <h3 class="age-group-title">Newborn</h3>
+              <p class="age-group-desc">Buttery soft jhablas, rompers & sleepsuits for tender skin.</p>
+              <a href="#collections" class="age-card-link">Explore 0–12M →</a>
+            </div>
+          </div>
+
+          <!-- Toddlers -->
+          <div class="age-card theme-toddlers">
+            <div class="age-card-img-wrap">
+              <span class="age-badge">1–3 Years</span>
+              <img src="assets/images/age-toddlers.jpg" alt="Toddler clothing" class="age-card-img" loading="lazy">
+            </div>
+            <div class="age-card-info">
+              <h3 class="age-group-title">Toddlers</h3>
+              <p class="age-group-desc">Stretchable waistbands, fuss-free co-ords & playful dungarees.</p>
+              <a href="#collections" class="age-card-link">Explore 1–3Y →</a>
+            </div>
+          </div>
+
+          <!-- Kids -->
+          <div class="age-card theme-kids">
+            <div class="age-card-img-wrap">
+              <span class="age-badge">4–7 Years</span>
+              <img src="assets/images/age-kids.jpg" alt="Kids clothing" class="age-card-img" loading="lazy">
+            </div>
+            <div class="age-card-info">
+              <h3 class="age-group-title">Kids</h3>
+              <p class="age-group-desc">Twirl-ready frocks, smart shirts & comfortable festive wear.</p>
+              <a href="#collections" class="age-card-link">Explore 4–7Y →</a>
+            </div>
+          </div>
+
+          <!-- Juniors -->
+          <div class="age-card theme-juniors">
+            <div class="age-card-img-wrap">
+              <span class="age-badge">8–12 Years</span>
+              <img src="assets/images/age-juniors.jpg" alt="Junior fashion" class="age-card-img" loading="lazy">
+            </div>
+            <div class="age-card-info">
+              <h3 class="age-group-title">Juniors</h3>
+              <p class="age-group-desc">Contemporary cuts, expressive prints & timeless elegance.</p>
+              <a href="#collections" class="age-card-link">Explore 8–12Y →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         5. SHOP BY CATEGORY (Simple 6-Tile Clean Grid)
+         ======================================================== -->
+    <section class="section shop-cat-section" id="categories">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">closet favourites</div>
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-subtitle">Thoughtfully arranged so you can effortlessly browse what matters today.</p>
+        </div>
+
+        <div class="cat-grid">
+          <!-- Girls -->
+          <a href="#collections" class="cat-tile">
+            <img src="assets/images/cat-girls.jpg" alt="Girls Collection" class="cat-tile-img" loading="lazy">
+            <div class="cat-tile-overlay">
+              <h3 class="cat-tile-name">Girls</h3>
+              <div class="cat-tile-count">Frocks, Sets & Lehengas</div>
+              <div class="cat-tile-cta">View Collection →</div>
+            </div>
+          </a>
+
+          <!-- Boys -->
+          <a href="#collections" class="cat-tile">
+            <img src="assets/images/cat-boys.jpg" alt="Boys Collection" class="cat-tile-img" loading="lazy">
+            <div class="cat-tile-overlay">
+              <h3 class="cat-tile-name">Boys</h3>
+              <div class="cat-tile-count">Kurtas, Shirts & Pants</div>
+              <div class="cat-tile-cta">View Collection →</div>
+            </div>
+          </a>
+
+          <!-- Ethnic / Festive -->
+          <a href="#collections" class="cat-tile">
+            <img src="assets/images/cat-ethnic.jpg" alt="Ethnic and Festive Collection" class="cat-tile-img" loading="lazy">
+            <div class="cat-tile-overlay">
+              <h3 class="cat-tile-name">Ethnic & Festive</h3>
+              <div class="cat-tile-count">Chanderi, Bandhani & Zari</div>
+              <div class="cat-tile-cta">View Collection →</div>
+            </div>
+          </a>
+
+          <!-- Party Wear -->
+          <a href="#collections" class="cat-tile">
+            <img src="assets/images/cat-party.jpg" alt="Party Wear Collection" class="cat-tile-img" loading="lazy">
+            <div class="cat-tile-overlay">
+              <h3 class="cat-tile-name">Party Wear</h3>
+              <div class="cat-tile-count">Celebration Dresses & Blazers</div>
+              <div class="cat-tile-cta">View Collection →</div>
+            </div>
+          </a>
+
+          <!-- Casual Everyday -->
+          <a href="#collections" class="cat-tile">
+            <img src="assets/images/cat-casual.jpg" alt="Casual Everyday" class="cat-tile-img" loading="lazy">
+            <div class="cat-tile-overlay">
+              <h3 class="cat-tile-name">Casual Everyday</h3>
+              <div class="cat-tile-count">Breathable Co-ords & Tees</div>
+              <div class="cat-tile-cta">View Collection →</div>
+            </div>
+          </a>
+
+          <!-- Sleep & Comfort -->
+          <a href="#collections" class="cat-tile">
+            <img src="assets/images/cat-sleep.jpg" alt="Sleep and Comfort" class="cat-tile-img" loading="lazy">
+            <div class="cat-tile-overlay">
+              <h3 class="cat-tile-name">Sleep & Comfort</h3>
+              <div class="cat-tile-count">Cloud-soft Pajamas & Sleepsuits</div>
+              <div class="cat-tile-cta">View Collection →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         6. FEATURED COLLECTION – "Stories we love" (Editable via JS)
+         ======================================================== -->
+    <section class="section featured-collection-section" id="collections">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">handpicked silhouettes</div>
+          <h2 class="section-title">Stories we love.</h2>
+          <p class="section-subtitle">Each piece is stitched with natural dyes, softest natural yarns, and unhurried craftsmanship.</p>
+        </div>
+
+        <!-- Rendered dynamically from FEATURED_PRODUCTS in js/main.js -->
+        <div class="products-grid" id="featuredProductsGrid"></div>
+
+        <div style="text-align: center; margin-top: 56px;">
+          <a href="#" data-wa-action="general" class="btn btn-navy">
+            <span>Enquire Entire Catalogue on WhatsApp</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.818 2.796.818 3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm0 10.455c-.911 0-1.637-.251-2.434-.725l-.174-.103-1.802.473.481-1.758-.114-.181c-.538-.854-.823-1.579-.823-2.396 0-2.614 2.127-4.741 4.742-4.741 2.615 0 4.742 2.127 4.742 4.742s-2.127 4.743-4.742 4.743z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         7. FESTIVE / SEASON BANNER (Full-width Navy & Gold)
+         ======================================================== -->
+    <section class="festive-banner-section" id="festive">
+      <div class="container">
+        <div class="festive-grid">
+          <!-- Text left -->
+          <div class="festive-content">
+            <div class="festive-tag">
+              <span>Diwali & Wedding Season Edit</span>
+              <span>♡</span>
+            </div>
+            <h2 class="festive-title">Royal festivities, feather-light comfort.</h2>
+            <p class="festive-desc">
+              Traditional Indian heritage weaves designed so children can actually dance, run, eat laddoos, and celebrate freely without itching or stiffness.
+            </p>
+            <a href="#" data-wa-action="general" class="btn btn-gold">
+              <span>View Festive Lookbook</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Image right -->
+          <div class="festive-image-wrap">
+            <img src="assets/images/festive-banner.jpg" alt="Festive kid fashion collection" loading="lazy">
+            <div class="festive-card-accent">
+              <span>Pure Mulmul & Handloom Weaves</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         8. OUR STORY (Storybook-style 3 Chapters)
+         ======================================================== -->
+    <section class="section story-section" id="our-story">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">the brand heart</div>
+          <h2 class="section-title">Every outfit has a story.</h2>
+          <p class="section-subtitle">Born from a mother’s quest for clothing that respects childhood innocence and sensitive skin.</p>
+        </div>
+
+        <div class="story-track">
+          <!-- Chapter 1 -->
+          <div class="story-chapter">
+            <img src="assets/elephant.png" alt="Mascot motif" class="story-mascot-corner">
+            <div class="story-chapter-content">
+              <span class="chapter-number">Chapter 01</span>
+              <h3 class="chapter-title">Comfort comes first. Always.</h3>
+              <p class="chapter-text">
+                Childhood happens in movements — cartwheels in the garden, running through puddles, and deep midday naps. We craft our garments with flat seams, organic cotton, and zero scratchy labels so your child feels only clouds on their skin.
+              </p>
+              <div class="chapter-quote">"If a child doesn't feel free to move, it isn't true luxury."</div>
+            </div>
+            <div class="story-chapter-visual">
+              <img src="assets/images/story-1.jpg" alt="Child in comfortable clothing smiling" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Chapter 2 -->
+          <div class="story-chapter reverse">
+            <img src="assets/elephant.png" alt="Mascot motif" class="story-mascot-corner">
+            <div class="story-chapter-content">
+              <span class="chapter-number">Chapter 02</span>
+              <h3 class="chapter-title">Handmade with love by Indian artisans.</h3>
+              <p class="chapter-text">
+                Every motif, block print, and gotta border is brought to life by master craftspeople across Rajasthan and Gujarat. We preserve time-tested Indian textile heritage while reimagining cuts for modern, carefree play.
+              </p>
+              <div class="chapter-quote">"Passed down through artisan hands into little wardrobes."</div>
+            </div>
+            <div class="story-chapter-visual">
+              <img src="assets/images/story-2.jpg" alt="Artisan craftsmanship and delicate textiles" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Chapter 3 -->
+          <div class="story-chapter">
+            <img src="assets/elephant.png" alt="Mascot motif" class="story-mascot-corner">
+            <div class="story-chapter-content">
+              <span class="chapter-number">Chapter 03</span>
+              <h3 class="chapter-title">Little moments become lifelong memories.</h3>
+              <p class="chapter-text">
+                From their very first family Diwali to birthday morning pancakes, clothes carry emotional bookmarks of who they once were. Katha creates heirloom keepsakes designed to be treasured, worn, and lovingly passed down to younger siblings.
+              </p>
+              <div class="chapter-quote">"Every little giggle, every little milestone has a story."</div>
+            </div>
+            <div class="story-chapter-visual">
+              <img src="assets/images/story-3.jpg" alt="Siblings sharing a gentle moment in Katha clothing" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         9. INSTAGRAM-STYLE LOOKBOOK (3x2 Desktop, 2x3 Mobile)
+         ======================================================== -->
+    <section class="section lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">join the story</div>
+          <h2 class="section-title">Little Storytellers in Katha</h2>
+          <p class="section-subtitle">Tag @katha.kidsfashion on Instagram to be featured on our community wall.</p>
+        </div>
+
+        <div class="lookbook-grid">
+          <div class="lookbook-item">
+            <img src="assets/images/insta-1.jpg" alt="Lookbook feature 1" loading="lazy">
+            <div class="lookbook-overlay">
+              <svg class="lookbook-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="lookbook-tag">@katha.kidsfashion</span>
+            </div>
+          </div>
+
+          <div class="lookbook-item">
+            <img src="assets/images/insta-2.jpg" alt="Lookbook feature 2" loading="lazy">
+            <div class="lookbook-overlay">
+              <svg class="lookbook-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="lookbook-tag">@katha.kidsfashion</span>
+            </div>
+          </div>
+
+          <div class="lookbook-item">
+            <img src="assets/images/insta-3.jpg" alt="Lookbook feature 3" loading="lazy">
+            <div class="lookbook-overlay">
+              <svg class="lookbook-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="lookbook-tag">@katha.kidsfashion</span>
+            </div>
+          </div>
+
+          <div class="lookbook-item">
+            <img src="assets/images/insta-4.jpg" alt="Lookbook feature 4" loading="lazy">
+            <div class="lookbook-overlay">
+              <svg class="lookbook-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="lookbook-tag">@katha.kidsfashion</span>
+            </div>
+          </div>
+
+          <div class="lookbook-item">
+            <img src="assets/images/insta-5.jpg" alt="Lookbook feature 5" loading="lazy">
+            <div class="lookbook-overlay">
+              <svg class="lookbook-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="lookbook-tag">@katha.kidsfashion</span>
+            </div>
+          </div>
+
+          <div class="lookbook-item">
+            <img src="assets/images/insta-6.jpg" alt="Lookbook feature 6" loading="lazy">
+            <div class="lookbook-overlay">
+              <svg class="lookbook-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              <span class="lookbook-tag">@katha.kidsfashion</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lookbook-footer-cta">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-cream" style="border-color: var(--color-navy); color: var(--color-navy);">
+            <span>Follow Us on Instagram ♡</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         10. PARENT LOVE (Testimonials)
+         ======================================================== -->
+    <section class="section testimonials-section" id="reviews">
+      <div class="container">
+        <div class="section-header-center">
+          <div class="section-tag">parent-trusted</div>
+          <h2 class="section-title">Loved by parents & little storytellers.</h2>
+          <p class="section-subtitle">Real words from families who made Katha part of their celebrations.</p>
+        </div>
+
+        <div class="testimonial-cards-wrap">
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon">“</div>
+            <p class="testimonial-text">
+              Finding festive wear that my 3-year-old son doesn’t cry to take off after 5 minutes used to be impossible. The cotton lining in Katha’s kurta is pure magic. He wore it happily all evening!
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">P</div>
+              <div>
+                <div class="author-name">Pooja Sharma</div>
+                <div class="author-city">Mumbai · Mom of Kabir (3Y)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon">“</div>
+            <p class="testimonial-text">
+              The packaging felt like unboxing a fairytale storybook. The organic muslin dress for my daughter’s first birthday was so dreamy and comfortable. The team on WhatsApp was incredibly sweet and helpful with sizing.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div>
+                <div class="author-name">Ananya Iyer</div>
+                <div class="author-city">Bengaluru · Mom of Meera (1Y)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon">“</div>
+            <p class="testimonial-text">
+              Katha has set a new benchmark for kids' fashion in India. Soft, understated, elegant colors — not loud neon prints. Beautiful Devanagari touch and the sweetest elephant mascot!
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">R</div>
+              <div>
+                <div class="author-name">Rohit Mehra</div>
+                <div class="author-city">New Delhi · Dad of Aarav (6Y)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         11. NEWSLETTER / WHATSAPP CTA
+         ======================================================== -->
+    <section class="newsletter-section" id="newsletter">
+      <div class="container">
+        <div class="newsletter-box">
+          <h2 class="newsletter-title">Get new arrivals on WhatsApp first.</h2>
+          <p class="newsletter-sub">
+            Join our private WhatsApp preview circle for seasonal festive drops, bespoke sizing assistance, and secret parent perks.
+          </p>
+          <form class="whatsapp-form" id="whatsappNewsletterForm">
+            <input type="tel" class="whatsapp-input" id="whatsappPhoneInput" placeholder="Enter your 10-digit WhatsApp number" pattern="[0-9]{10}" required>
+            <button type="submit" class="btn btn-gold">
+              <span>Chat on WhatsApp</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.818 2.796.818 3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm0 10.455c-.911 0-1.637-.251-2.434-.725l-.174-.103-1.802.473.481-1.758-.114-.181c-.538-.854-.823-1.579-.823-2.396 0-2.614 2.127-4.741 4.742-4.741 2.615 0 4.742 2.127 4.742 4.742s-2.127 4.743-4.742 4.743z"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================
+       12. FOOTER (Navy with Baby Elephant Peeking)
+       ======================================================== -->
+  <footer class="site-footer" id="contact">
+    <!-- Baby elephant mascot peeking over the footer top edge -->
+    <img src="assets/elephant.png" alt="Baby elephant mascot peeking" class="footer-elephant-peek" id="footerElephant">
+
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand column -->
+        <div class="footer-brand">
+          <img src="assets/logo-transparent.png" alt="कथा Logo" class="footer-logo">
+          <div class="footer-tagline">every little has a story</div>
+          <p class="footer-bio">
+            A boutique kids' fashion house creating gentle, joyful, and heirloom garments for little souls aged 0 to 12 years across India.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#collections">Featured Stories</a></li>
+            <li><a href="#age-groups">Shop By Age</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#our-story">Brand Philosophy</a></li>
+          </ul>
+        </div>
+
+        <!-- Age Groups -->
+        <div>
+          <h4 class="footer-col-title">Age Groups</h4>
+          <ul class="footer-links">
+            <li><a href="#age-groups">Newborn (0–12M)</a></li>
+            <li><a href="#age-groups">Toddlers (1–3Y)</a></li>
+            <li><a href="#age-groups">Kids (4–7Y)</a></li>
+            <li><a href="#age-groups">Juniors (8–12Y)</a></li>
+            <li><a href="#festive">Festive Edits</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Connect -->
+        <div>
+          <h4 class="footer-col-title">Connect & Enquire</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>WhatsApp: +91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>namaste@kathakids.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Jaipur & Mumbai, India</span>
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" data-wa-action="general" class="footer-social-btn" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.818 2.796.818 3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm0 10.455c-.911 0-1.637-.251-2.434-.725l-.174-.103-1.802.473.481-1.758-.114-.181c-.538-.854-.823-1.579-.823-2.396 0-2.614 2.127-4.741 4.742-4.741 2.615 0 4.742 2.127 4.742 4.742s-2.127 4.743-4.742 4.743z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>© 2026 कथा (Katha Kids). All stories reserved.</div>
+        <div class="footer-love-badge">
+          <span>Made with ♡ for little storytellers</span>
+        </div>
+        <div>Carefully crafted in pure cottons & mulmul.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="#" data-wa-action="general" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <svg class="floating-whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.531 1.77.818 2.796.818 3.181 0 5.767-2.586 5.768-5.766.001-3.182-2.585-5.768-5.768-5.768zm0 10.455c-.911 0-1.637-.251-2.434-.725l-.174-.103-1.802.473.481-1.758-.114-.181c-.538-.854-.823-1.579-.823-2.396 0-2.614 2.127-4.741 4.742-4.741 2.615 0 4.742 2.127 4.742 4.742s-2.127 4.743-4.742 4.743z"/>
+    </svg>
+    <span class="floating-whatsapp-text">Chat with Us</span>
+  </a>
+
+  <!-- GSAP & ScrollTrigger (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Lenis Smooth Scroll (CDN) -->
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+
+  <!-- Main JavaScript Application -->
+  <script src="js/main.js"></script>
+</body>
+</html>
