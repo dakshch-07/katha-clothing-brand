@@ -322,8 +322,8 @@ function setupMobileMenu() {
    SMOOTH SCROLL (LENIS + ANCHORS)
    ======================================================== */
 function setupSmoothScroll() {
-  // Check if Lenis is loaded from CDN
-  if (typeof Lenis !== "undefined") {
+  // Only enable Lenis on desktop (> 991px). Native mobile scroll is faster and doesn't conflict with ScrollTrigger
+  if (window.innerWidth > 991 && typeof Lenis !== "undefined") {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -372,6 +372,14 @@ function setupAnimations() {
 
   const isReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (isReducedMotion) return;
+
+  // On mobile devices, ensure cards are immediately visible and not delayed by scroll triggers
+  if (window.innerWidth <= 991) {
+    document.querySelectorAll('.age-card, .product-card, .cat-tile, .story-chapter').forEach(el => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  }
 
   // 1. Hero floating cards (infinite subtle floating)
   gsap.to(".hero-card-1", {

@@ -55,6 +55,8 @@
 }
 
 html {
+  overflow-x: hidden;
+  width: 100%;
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -62,6 +64,8 @@ html {
 }
 
 body {
+  width: 100%;
+  position: relative;
   font-family: var(--font-body);
   background-color: var(--color-offwhite);
   color: var(--color-charcoal);
@@ -262,10 +266,12 @@ button {
    0. PRELOADER
    ======================================================== */
 .preloader {
+  max-width: 100%;
+  right: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: var(--color-navy);
   z-index: 9999;
@@ -471,10 +477,12 @@ button {
 
 /* Mobile Menu Overlay */
 .mobile-menu-overlay {
+  max-width: 100%;
+  right: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: var(--color-navy);
   z-index: 105;
@@ -1000,10 +1008,10 @@ button {
     scroll-snap-type: x mandatory;
     gap: 18px;
     padding-bottom: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: -20px;
-    margin-right: -20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 0;
+    margin-right: 0;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
   }
@@ -1694,10 +1702,10 @@ button {
     scroll-snap-type: x mandatory;
     gap: 18px;
     padding-bottom: 24px;
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 4px;
+    padding-right: 4px;
     scrollbar-width: none;
   }
   .testimonial-cards-wrap::-webkit-scrollbar {
@@ -2026,5 +2034,32 @@ button {
   }
   .hero-scroll-heart {
     animation: none;
+  }
+}
+
+/* Ensure cards are visible by default and never stuck hidden */
+.age-card, .product-card, .cat-tile, .story-chapter {
+  opacity: 1 !important;
+}
+
+/* Strict mobile viewport container constraint */
+@media (max-width: 991px) {
+  html, body {
+    overflow-x: hidden !important;
+    position: relative;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+  .container {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden;
+  }
+  .hero-section, .promise-strip, .shop-age-section, .shop-cat-section, 
+  .featured-collection-section, .festive-banner-section, .story-section, 
+  .lookbook-section, .testimonials-section, .newsletter-section, .site-footer {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
   }
 }
